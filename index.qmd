@@ -133,4 +133,4 @@ Williams is fond [~PP~ of painting ].
 
 ## Адъюнкция к промежуточной и максимальной проекциям
 
-![](xbar-adjunction.svg){.lightbox}
+![](xbar-adjunction.png){.lightbox}
