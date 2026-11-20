@@ -1,0 +1,243 @@
+/*-- scss:defaults --*/
+
+// Main font: ExtraLight 200 + Medium 500 (for bold/headings), including italics
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,500;1,200;1,500&display=swap');
+
+// Symbols font: ExtraLight 200 + Medium 500
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@200;500&display=swap');
+
+// Monospace font: ExtraLight 200 + Medium 500
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;500&display=swap');
+
+// Put the symbols font after the main font to handle arrows and other characters not included in the main font
+$font-family-sans-serif: "Noto Sans", "Noto Sans Symbols", Helvetica, sans-serif !default;
+$font-family-monospace: "Noto Sans Mono", SFMono-Regular, Menlo, monospace !default;
+
+$headings-font-weight: 200 !default;
+
+body {
+  font-weight: 200;
+}
+
+strong, b,
+em strong, strong em, i strong, strong i {
+  font-weight: 400;
+}
+
+sub, sup {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 0;
+}
+
+$presentation-font-size-root: 27px !default;
+$presentation-line-height: 1.3 !default;
+
+$body-bg: #ffffff !default;
+$body-color: #000000 !default;
+$link-color: #0056d6 !default;
+$presentation-heading-color: #000000 !default;
+$selection-bg: #384e94 !default;
+
+$code-block-bg: #1e1e2e !default;
+$code-block-color: #cdd6f4 !default;
+$code-bg: #e8e8ec !default;
+$code-color: #b3261e !default;
+
+/*-- scss:rules --*/
+
+/* Light body — still slender, but sturdier than ExtraLight */
+.reveal {
+  font-weight: 200;
+}
+
+/* Balanced hierarchy: headings at Medium (500) */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-weight: 200;
+}
+
+/* Emphasis: one step up to Regular (400) */
+.reveal strong, .reveal b {
+  font-weight: 400;
+}
+
+/* Italics match body weight — no more "heavier italic" */
+.reveal em, .reveal i {
+  font-weight: 250;
+  font-style: italic;
+}
+
+.reveal blockquote, .reveal blockquote p {
+  color: #7a7a7a;
+}
+
+.reveal blockquote {
+  border-left-color: #7a7a7a;
+}
+
+/* Code chunk: dark background, light text */
+.reveal pre code {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+/* Output block: light background, dark text — clearly distinct from code */
+.reveal .cell-output pre,
+.reveal .cell-output pre code {
+  background-color: #f4f4f6;
+  color: #1e1e2e;
+}
+
+/* Border to separate code from output */
+.reveal pre, .reveal div.sourceCode, .reveal .cell-output pre {
+  border: 1px solid #403f3e;
+  border-radius: 0.3em;
+}
+
+/* Syntax highlighting on the dark code background */
+.reveal pre code span.co,   /* comment */
+.reveal pre code span.c1,   /* comment, single line */
+.reveal pre code span.cm {  /* comment, multiline */
+  color: #9399b2;           /* muted lavender-grey — readable, not shouting */
+}
+
+.reveal pre code span.op,   /* operator */
+.reveal pre code span.p,    /* punctuation */
+.reveal pre code span.pun { /* punctuation (alternate class) */
+  color: #bac2de;           /* soft light grey */
+}
+
+.reveal pre code span.kw,   /* keyword */
+.reveal pre code span.k,    /* keyword (alternate) */
+.reveal pre code span.kn {  /* keyword, constant */
+  color: #cba6f7;           /* soft purple — stands out from blue/green */
+}
+
+.reveal pre code span.st,   /* string */
+.reveal pre code span.s,    /* string (alternate) */
+.reveal pre code span.s1,   /* string, single-quoted */
+.reveal pre code span.s2 {  /* string, double-quoted */
+  color: #a6e3a1;           /* keep your light green */
+}
+
+.reveal pre code span.fu,   /* function */
+.reveal pre code span.nf {  /* function name */
+  color: #89b4fa;           /* keep your light blue */
+}
+
+.reveal pre code span.dt,   /* data type */
+.reveal pre code span.bu,   /* built-in */
+.reveal pre code span.cf {  /* control flow */
+  color: #f9e2af;           /* warm yellow */
+}
+
+.reveal pre code span.nb,   /* built-in name */
+.reveal pre code span.nn {  /* namespace */
+  color: #fab387;           /* peach */
+}
+
+.reveal pre code span.er,   /* error */
+.reveal pre code span.al {  /* alert */
+  color: #f38ba8;           /* soft red */
+}
+
+.reveal pre code span.va,   /* variable */
+.reveal pre code span.nv {  /* variable name */
+  color: #cdd6f4;           /* same as base code text */
+}
+
+.reveal pre code span.dv,   /* decimal value */
+.reveal pre code span.m,    /* number */
+.reveal pre code span.mi,   /* number, integer */
+.reveal pre code span.mf {  /* number, float */
+  color: #f5c2e7;           /* pink */
+}
+
+.reveal pre code span.n,    /* generic name */
+.reveal pre code span.na,   /* attribute (e.g. lemma_) */
+.reveal pre code span.nv,   /* variable name */
+.reveal pre code span.vc,   /* variable, class */
+.reveal pre code span.vg,   /* variable, global */
+.reveal pre code span.vi,   /* variable, instance */
+.reveal pre code span.vm,   /* variable, magic */
+.reveal pre code span.nb,   /* built-in name (e.g. print) */
+.reveal pre code span.nn {  /* namespace (e.g. spacy) */
+  color: #cdd6f4;           /* same bright soft-white as base code text */
+}
+
+
+.reveal p code, .reveal li code, .reveal td code {
+  padding: 0.06em 0.28em;
+  border-radius: 0.2em;
+}
+
+.reveal .slide-number {
+  color: #000000;
+  background-color: transparent;
+}
+
+.reveal .code-copy-button {
+  color: #888785;
+}
+
+.reveal .slides table {
+  border-collapse: collapse;
+  margin: 1em auto;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
+
+.reveal .slides table th,
+.reveal .slides table td {
+  border: none;
+  padding: 0.3em 0.8em;
+  background: none;
+}
+
+.reveal .slides table thead th {
+  border-bottom: 1px solid currentColor;
+}
+
+.reveal .slides table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/*-- scss:rules --*/
+.reveal .slide-number {
+  font-family: inherit; 
+}
+
+/*-- scss:rules --*/
+.c1 { color: #D32F2F; }
+.c2 { color: #1565C0; }
+.c3 { color: #2E7D32; }
+
+/*-- scss:rules --*/
+.caution-sign {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.2em;
+  height: 1.05em;
+  margin: 0 0.2em;
+  background: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 88'>\
+<polygon points='50,2 98,86 2,86' fill='white' stroke='%23D32F2F' stroke-width='8'/>\
+<rect x='46' y='30' width='8' height='32' fill='black'/>\
+<circle cx='50' cy='72' r='5' fill='black'/>\
+</svg>") no-repeat center / contain;
+}
+
+.swap { display: inline-grid; grid-template-areas: "x"; }
+.swap > * { grid-area: x; white-space: nowrap; }
+
+.reveal .arrow-list ul {
+  list-style-type: none;      /* Remove default bullet points */
+  padding-left: 1.2em;        /* Reserve space for arrows */
+}
+
+.reveal .arrow-list li::before {
+  content: "\2192";           /* Unicode right-pointing triangle arrow */
+  color: currentColor;        /* Follow text color, can be changed to a specific color */
+  margin-right: 0.4em;        /* Spacing between arrow and text */
+  margin-left: -1.2em;        /* Negative margin to align arrow with text */
+}

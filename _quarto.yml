@@ -1,0 +1,16 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "syntactic-movement"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+execute:
+  freeze: auto
+
+#validate-yaml: false
