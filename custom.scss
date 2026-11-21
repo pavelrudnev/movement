@@ -241,3 +241,17 @@ $code-color: #b3261e !default;
   margin-right: 0.4em;        /* Spacing between arrow and text */
   margin-left: -1.2em;        /* Negative margin to align arrow with text */
 }
+
+/*-- scss:rules --*/
+
+.reveal .slide h3 {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  /*border-top: 1px solid rgba(0, 0, 0, 0.15); /* Optional: add a separator line for stronger visual separation */
+}
+
+.reveal .slide h4 {
+  margin-top: 0.25em;
+  padding-top: 0.25em;
+  /*border-top: 1px solid rgba(0, 0, 0, 0.15); /* Optional: add a separator line for stronger visual separation */
+}

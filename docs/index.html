@@ -32,7 +32,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -540,6 +560,19 @@
 <li>роль с-командования для выявления правил употребления местоимений</li>
 <li>ограничения на возможные структуры: тета-критерий</li>
 <li>синтаксис нульместных, одноместных, двухместных и трёхместных глагольных групп</li>
+<li>структура предложения
+<ul>
+<li>CP &gt; TP &gt; vP &gt; VP</li>
+</ul></li>
+</ul>
+</section>
+<section id="сегодня" class="slide level2">
+<h2>Сегодня</h2>
+<ul>
+<li>неглагольные предикаты и тета-критерий</li>
+<li>ещё об адъюнкции</li>
+<li>синтаксические процессы: передвижение</li>
+<li>порядок слов</li>
 </ul>
 </section>
 <section>
@@ -553,32 +586,39 @@
 <div class="ex grid">
 <div class="g-col-1" id="">(1)</div> <div class="g-col-11">
 <p>Иванов — врач.<br>
-→ предикатом является NP <em>врач</em></p>
+→ предикатом является N<sup>0</sup> <em>врач</em></p>
 </div>
 </div>
 <div class="ex grid">
 <div class="g-col-1" id="">(2)</div> <div class="g-col-11">
 <p>Иванов умён.<br>
-→ предикатом является AP <em>умён</em></p>
+→ предикатом является A<sup>0</sup> <em>умён</em></p>
 </div>
 </div>
 <div class="ex grid">
 <div class="g-col-1" id="">(3)</div> <div class="g-col-11">
 <p>Иванов в Москве.<br>
-→ предикатом является PP <em>в Москве</em></p>
+→ предикатом является P<sup>0</sup> <em>в</em></p>
 </div>
 </div>
 <div class="ex grid">
 <div class="g-col-1" id="">(4)</div> <div class="g-col-11">
 <p>Иванов наверху/дома.<br>
-→ предикатом является AdvP <em>наверху/дома</em></p>
+→ предикатом является Adv<sup>0</sup> <em>наверху/дома</em></p>
 </div>
 </div>
+<p>В логике первого порядка подобные структуры обычно представляются в виде формул следующего вида, где «И» — константа/постоянная величина <em>Иванов</em>:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(5)</div> <div class="g-col-11">
+<p><em>врач</em>(И)</p>
+</div>
+</div>
+<p>Регулируются ли структуры такого типа тета-критерием?</p>
 </section>
 <section id="субъект-в-целом-обязателен" class="slide level2">
 <h2>Субъект в целом обязателен<sup>1</sup></h2>
 <div class="ex grid">
-<div class="g-col-1" id="">(5)</div> <div class="g-col-11">
+<div class="g-col-1" id="">(6)</div> <div class="g-col-11">
 <div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
 <div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
 <p>*Врач.</p>
@@ -611,14 +651,14 @@
 <h2>Обязательные аргументы прилагательных</h2>
 <p>Некоторые прилагательные и существительные способны принимать предложные группы в качестве дополнений:</p>
 <div class="ex grid">
-<div class="g-col-1" id="">(6)</div> <div class="g-col-11">
+<div class="g-col-1" id="">(7)</div> <div class="g-col-11">
 <p>Williams is fond [<sub>PP</sub> of painting ].</p>
 </div>
 </div>
 <div class="fragment">
 <p>Данные PP-комплементы обязательны:</p>
 <div class="ex grid">
-<div class="g-col-1" id="">(7)</div> <div class="g-col-11">
+<div class="g-col-1" id="">(8)</div> <div class="g-col-11">
 <p>*Williams is fond.</p>
 </div>
 </div>
@@ -627,7 +667,7 @@
 <p>Подобные прилагательные существуют и в русском языке.</p>
 <h4 id="склонный"><em>склонный</em></h4>
 <div class="ex grid">
-<div class="g-col-1" id="">(8)</div> <div class="g-col-11">
+<div class="g-col-1" id="">(9)</div> <div class="g-col-11">
 <div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
 <div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
 <p>Нам нужны склонные к компромиссам сотрудники.</p>
@@ -642,7 +682,7 @@
 </div>
 <h4 id="похож"><em>похож</em></h4>
 <div class="ex grid">
-<div class="g-col-1" id="">(9)</div> <div class="g-col-11">
+<div class="g-col-1" id="">(10)</div> <div class="g-col-11">
 <div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
 <div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
 <p>Иванов похож на отца.</p>
@@ -662,13 +702,712 @@
 <h1>Ещё об адъюнкции</h1>
 
 </section>
-<section id="адъюнкция-к-промежуточной-и-максимальной-проекциям" class="slide level2">
-<h2>Адъюнкция к промежуточной и максимальной проекциям</h2>
-<p><a href="xbar-adjunction.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="xbar-adjunction.png"></a></p>
+<section id="адъюнкция-к-x-и-xp" class="slide level2">
+<h2>Адъюнкция к X′ и XP</h2>
+<div class="columns">
+<div style="text-align: center;">
+<div class="column" style="width:33%;">
+<p><a href="xbar-adjunction.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img data-src="xbar-adjunction.png" style="width:70.0%"></a></p>
+</div><div class="column" style="width:33%;">
+<p><a href="xp-adjunction.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="xp-adjunction.png" style="width:70.0%"></a></p>
+</div></div>
+</div>
+</section>
+<section id="возможные-и-невозможные-структуры" class="slide level2">
+<h2>Возможные и невозможные структуры</h2>
+<div style="text-align: center;">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-nrow="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-zpxp" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-zpxp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="zp-xp.png" id="fig-zpxp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-zpxp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;1
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-zpx" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-zpx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="zp-x.png" id="fig-zpx">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-zpx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;2
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-xyz" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-xyz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="xyz.png" id="fig-xyz">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-xyz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;3
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-xy" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-xy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="xy.png" id="fig-xy">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-xy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;4
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-xbarybar" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-xbarybar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="xbar-ybar.png" id="fig-xbarybar">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-xbarybar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;5
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-ybarxbar" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-ybarxbar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="ybar-xbar.png" id="fig-ybarxbar">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-ybarxbar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;6
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-xbaryp" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-xbaryp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="xbar-yp.png" id="fig-xbaryp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-xbaryp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;7
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-ybar" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-ybar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="ybar.png" id="fig-ybar">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-ybar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;8
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-xbarypspec" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-xbarypspec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="xbar-yp-spec.png" id="fig-xbarypspec">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-xbarypspec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;9
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-xpypzp" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig">
+<div aria-describedby="fig-xpypzp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="xp-yp-zp.png" id="fig-xpypzp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-xpypzp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Рисунок&nbsp;10
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="cложные-вершины" class="slide level2">
+<h2>Cложные вершины</h2>
+<p>Иногда то, что мы по ряду причин хотим считать вершиной, состоит из нескольких «слов»:</p>
+<ul>
+<li><em>англ.</em>&nbsp;in front of</li>
+<li><em>из-за</em></li>
+<li><em>из-под</em></li>
+</ul>
+<p>Каждый из этих элементов по отдельности может быть вершиной.</p>
+</section>
+<section class="slide level2">
+
+<p>Предположим, что вершина А может присоединяться в качестве <strong>адъюнкта</strong> к вершине B, образуя вместе с ней <strong>сложную вершину</strong>.</p>
+<p>Например, A&nbsp;=&nbsp;<em>за</em><sub>P</sub>; B&nbsp;=&nbsp;<em>из</em><sub>P</sub>:</p>
+<div style="text-align: center;">
+<p><a href="iz-za.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="iz-za.png" style="width:20.0%"></a></p>
+</div>
+<p>Сложный предлог <em>из-за</em> наследует грамматические свойства <em>из</em> и не наследует грамматических свойств <em>за</em>:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(11)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>из дом<strong>-а</strong></p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>за дом<strong>-ом</strong></p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">c.</div> <div style="grid-column: span 17;">
+<p>из-за дом<strong>-а</strong>/<strong>-*ом</strong></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="сложные-вершины-и-передвижение-глагола" class="slide level2">
+<h2>Сложные вершины и передвижение глагола</h2>
+<p>Вспомним, что финитный глагол в разных языках может произноситься в разных позициях:</p>
+<ul>
+<li>в v<sup>0</sup> в русском и английском;</li>
+<li>в T<sup>0</sup> в романских;</li>
+<li>в C<sup>0</sup> в остальных германских.</li>
+</ul>
+<p>Мы будем считать, что, передвигаясь из V<sup>0</sup> в v<sup>0</sup>, глагол образует с v<sup>0</sup> сложную вершину путём адъюнкции.</p>
+</section>
+<section id="v0v0" class="slide level2">
+<h2>V<sup>0</sup>+v<sup>0</sup>&nbsp;=&nbsp;?</h2>
+<div style="text-align: center;">
+<div class="{.layout-nrow=2}">
+<p><a href="PISH-en.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="PISH-en.png" style="width:40.0%"></a> <a href="Vv.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="Vv.png" style="width:40.0%"></a></p>
+</div>
+</div>
+</section>
+<section id="несовпадение-позиций" class="slide level2">
+<h2>Несовпадение позиций</h2>
+<p>Иногда составляющая произносится в одной позиции, а интерпретируется в другой:</p>
+<ul>
+<li>Spec,vP → Spec,TP
+<ul>
+<li><em>Наши гости уже все ушли.</em></li>
+<li><em>John seems to be reading a book.</em></li>
+</ul></li>
+<li>позиция вопросительных групп в прямых и косвенных вопросах
+<ul>
+<li><em>What book does John seem to be reading __?</em></li>
+<li><em>Mary wonders what book John seems to be reading __.</em></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>К ним мы добавим пассивизацию, а также т.н.&nbsp;«свободный порядок слов» в русском.</p>
+</div>
+</section>
+<section id="свободный-порядок-слов" class="slide level2">
+<h2>Свободный порядок слов</h2>
+<div class="ex grid">
+<div class="g-col-1" id="">(12)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>Вчера я положил свою книгу на полку.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>Я вчера положил свою книгу на полку.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">c.</div> <div style="grid-column: span 17;">
+<p>На полку я вчера положил свою книгу.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">d.</div> <div style="grid-column: span 17;">
+<p>Свою книгу я вчера положил на полку.</p>
+</div>
+</div>
+</div>
+</div>
+<h3 id="однако">Однако</h3>
+<div class="ex grid">
+<div class="g-col-1" id="">(13)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>*На я полку книгу вчера положил свою.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>*Свою на вчера книгу я полку положил.</p>
+</div>
+</div>
+</div>
+</div>
+<p>→ свободным является не порядок <strong>слов</strong>, а порядок <strong>составляющих</strong></p>
+</section>
+<section id="передвижение-и-x-схема" class="slide level2">
+<h2>Передвижение и X′-схема</h2>
+<p>Вспомним, что структуры, создаваемые передвижением, также соблюдают общие принципы построения словосочетаний.</p>
+<p>Следовательно, для каждой рассмотренной «конструкции»</p>
+<ul>
+<li>нам нужна вершина, инициирующая передвижение;</li>
+<li>группы будут передвигаться в её спецификатор
+<ul>
+<li>C<sub>[?]</sub></li>
+<li>C<sub>[<span class="smallcaps">top</span>]</sub></li>
+<li>C<sub>[<span class="smallcaps">foc</span>]</sub></li>
+</ul></li>
+</ul>
+<div title="Внимание">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Внимание</strong></p>
+</div>
+<div class="callout-content">
+<p>та же логика, что при передвижении подлежащего в Spec,TP</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="о-существовании-передвижения" class="title-slide slide level1 center">
+<h1>О существовании передвижения</h1>
+
+</section>
+<section id="wanna-contraction" class="slide level2">
+<h2><em>wanna</em>-contraction</h2>
+<p>Сравним следующие английские предложения:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(14)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>I want to help you.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>I wanna help you.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(15)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>Who do you want to help?</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>Who do you wanna help?</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="ex grid">
+<div class="g-col-1" id="">(16)</div> <div class="g-col-11">
+<p>Who do you want to help you?</p>
+</div>
+</div>
+<p>но:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(17)</div> <div class="g-col-11">
+<p>*Who do you wanna help you?</p>
+</div>
+</div>
+<div class="fragment">
+<p>След/копия подлежащего блокирует слияние:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(18)</div> <div class="g-col-11">
+<p>[<sub>CP</sub> who do [<sub>TP</sub> you want [ <del>who</del> [<sub>TP</sub> to help you]]]]</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="кстати-о-бедности-стимула" class="title-slide slide level1 center">
+<h1>Кстати: о бедности стимула</h1>
+
+</section>
+<section id="местоимения-и-усвоение-языка-leddon2006" class="slide level2">
+<h2>Местоимения и усвоение языка <span class="citation" data-cites="Leddon:2006">(<a href="#/литература" role="doc-biblioref" onclick="">Leddon &amp; Lidz 2006</a>)</span></h2>
+<p>Антецедент рефлексива находится в области ближайшего подлежащего:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(19)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered that <span class="c1">Ellen</span> painted a picture of <span class="c1">herself</span>.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>*<span class="c3">Norbert</span> remembered that Ellen painted a picture of <span class="c3">himself</span>.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">c.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered that <span class="c1">Ellen</span> was very proud of <span class="c1">herself</span>.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">d.</div> <div style="grid-column: span 17;">
+<p>*<span class="c3">Norbert</span> remembered that Ellen was very proud of <span class="c3">himself</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<blockquote>
+<p>Допустим, что ребёнок получает эти данные из языковой среды.</p>
+</blockquote>
+</section>
+<section id="дополнительные-ограничения" class="slide level2">
+<h2>Дополнительные ограничения</h2>
+<p>Оказывается, что сформулированное ограничение недостаточно строго:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(20)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered which picture of herself Ellen painted.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered which picture of himself Ellen painted.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">c.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered how proud of herself Ellen was.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">d.</div> <div style="grid-column: span 17;">
+<p>*Norbert remembered how proud of himself Ellen was.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Какие первичные языковые данные необходимы для усвоения данного контраста?</p>
+</section>
+<section id="leddon2006" class="slide level2">
+<h2><span class="citation" data-cites="Leddon:2006">Leddon &amp; Lidz (<a href="#/литература" role="doc-biblioref" onclick="">2006</a>)</span></h2>
+<p>Структурно близкие предложения не встречаются в речи, направленной на детей:</p>
+<ul>
+<li>10000 частных вопросов (wh-questions) в базе данных Child Language Data Exchange System (CHILDES)</li>
+<li><strong>0 вопросов</strong> с вопросительной группой, содержащей рефлексив/личное местоимение/имя</li>
+<li>аналогичный поиск в Гугле выдаёт только ссылки на лингвистические работы</li>
+</ul>
+<p>→ отсутствуют данные для формулировки обобщения</p>
+</section>
+<section id="predicate-internal-subject-hypothesis" class="slide level2">
+<h2>Predicate-internal subject hypothesis</h2>
+<p>Все аргументы получают тета-роли низко.</p>
+<p>Ещё раз рассмотрим интересующие нас примеры:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(21)</div> <div class="g-col-11">
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">a.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered which picture of herself Ellen painted.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">b.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered which picture of himself Ellen painted.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">c.</div> <div style="grid-column: span 17;">
+<p>Norbert remembered how proud of herself Ellen was.</p>
+</div>
+</div>
+<div class="exi grid" style="--bs-columns: 18; --bs-gap: 0rem;">
+<div class="g-col-1" id="">d.</div> <div style="grid-column: span 17;">
+<p>*Norbert remembered how proud of himself Ellen was.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Предположим, что, подобно глагольным группам, предикат <em>proud of himself/herself</em> содержит невидимую копию подлежащего:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(22)</div> <div class="g-col-11">
+<p>*Norbert remembered [how <del>Ellen</del> proud of himself] Ellen was.</p>
+</div>
+</div>
+<p>Определённое сходство с непроизносимым, но грамматически активным глаголом в [<sub>VP</sub> [<sub>NP</sub> <em>a pound</em>] [<sub>V′</sub> <del><em>give</em></del> [<sub>PP</sub> <em>to Michael</em>]]]</p>
+</section></section>
+<section>
+<section id="подробнее-о-передвижении" class="title-slide slide level1 center">
+<h1>Подробнее о передвижении</h1>
+
+</section>
+<section id="свойства-передвижения" class="slide level2">
+<h2>Свойства передвижения</h2>
+<ul>
+<li>передвигаются только целые составляющие</li>
+<li>результатом передвижения являются структуры, подчиняющиеся правилам теории проекции (X′)</li>
+<li>передвижение происходит «вверх по дереву»</li>
+<li>передвижение не добавляет в структуру новых элементов</li>
+<li>передвижение не может пересекать границ некоторых объектов</li>
+</ul>
+</section>
+<section id="лингвистические-гамма-лучи" class="slide level2">
+<h2>Лингвистические «гамма-лучи»</h2>
+<p>Давайте рассмотрим одну метафору.</p>
+<div style="text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="gamma.png" style="width:45.0%"></p>
+<figcaption>Проникающая способность излучения, из WikimediaCommons</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="неограниченность-вопросительного-выноса" class="slide level2">
+<h2>Неограниченность вопросительного выноса</h2>
+<p>Вопросительный вынос может быть локальным, т.е.&nbsp;происходить в пределах одного простого предложения:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(23)</div> <div class="g-col-11">
+<p>He was reading <strong>a book</strong>.</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(24)</div> <div class="g-col-11">
+<p><strong>What</strong> was he reading __?</p>
+</div>
+</div>
+</section>
+<section id="неограниченность-в-вопросах" class="slide level2">
+<h2>Неограниченность в вопросах</h2>
+<p>Одна граница клаузы:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(25)</div> <div class="g-col-11">
+<p>He said [ (that) he was reading <strong>a book</strong>].</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(26)</div> <div class="g-col-11">
+<p><strong>What</strong> did he say [ (that) he was reading __ ]?</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Две границы клауз:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(27)</div> <div class="g-col-11">
+<p>She believes [ (that) he said [ (that) he was reading <strong>a book</strong>].</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(28)</div> <div class="g-col-11">
+<p><strong>What</strong> does she believe<br>
+[ (that) he said [ (that) he was reading __ ]]?</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Три границы клауз:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(29)</div> <div class="g-col-11">
+<p>They are claiming [ (that) she believes [ (that) he said [ (that) he was reading <strong>a book</strong>]]].</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(30)</div> <div class="g-col-11">
+<p><strong>What</strong> are they claiming [ (that) she believes<br>
+[ (that) he said [ (that) he was reading __ ]]]?</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Четыре границы клауз:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(31)</div> <div class="g-col-11">
+<p>I think [ (that) they are claiming [ (that) she believes<br>
+[ (that) he said [ (that) he was reading <strong>a book</strong>]]]].</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(32)</div> <div class="g-col-11">
+<p><strong>What</strong> do you think [ (that) they are claiming [ (that) she believes &nbsp; [ (that) he said [ (that) he was reading __]]]]?</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Пять границ клауз:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(33)</div> <div class="g-col-11">
+<p>Everyone agrees [ (that) I think [ (that) they are claiming [ (that) she believes<br>
+[ (that) he said [ (that) he was reading <strong>a book</strong>]]]]].</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(34)</div> <div class="g-col-11">
+<p><strong>What</strong> does everyone agree [ (that) you think [ (that) they are claiming [ (that) she believes &nbsp; [ (that) he said [ (that) he was reading __]]]]]?</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Шесть границ клауз:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(35)</div> <div class="g-col-11">
+<p>Everyone can hardly deny [ (that) they agree [ (that) I think [ (that) they are claiming [ (that) she believes<br>
+[ (that) he said [ (that) he was reading <strong>a book</strong>]]]]]].</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(36)</div> <div class="g-col-11">
+<p><strong>What</strong> can everyone hardly deny [ (that) they agree [ (that) you think [ (that) they are claiming [ (that) she believes &nbsp; [ (that) he said [ (that) he was reading __]]]]]?</p>
+</div>
+</div>
+<p><strong>Вывод:</strong> не существует принципиального верхнего предела числа границ клауз, которые может пересекать вопросительный вынос</p>
+</section>
+<section id="но" class="slide level2">
+<h2>Но!</h2>
+<p>Иногда вопросы просто кажутся невозможными:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(37)</div> <div class="g-col-11">
+<p>He made the claim [ that he has met <strong>Wolverine</strong> ]</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(38)</div> <div class="g-col-11">
+<p>*<strong>Who</strong> did he make the claim [ that he has met __]?</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(39)</div> <div class="g-col-11">
+<p>He mentioned the fact [ that he had run into <strong>Magneto</strong> ]</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(40)</div> <div class="g-col-11">
+<p>*Who did he mention the fact [ that he had run into __]?</p>
+</div>
+</div>
+<div class="fragment">
+<p>Что особенно поразительно, учитывая полную приемлемость следующего:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(41)</div> <div class="g-col-11">
+<p><strong>Who</strong> did he claim [ that he has met __ ]?</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(42)</div> <div class="g-col-11">
+<p><strong>Who</strong> did he mention [ that he had run into __]?</p>
+</div>
+</div>
+<p><strong>Что здесь происходит?</strong></p>
+</div>
+</section></section>
+<section>
+<section id="синтаксические-острова" class="title-slide slide level1 center">
+<h1>Синтаксические острова</h1>
+
+</section>
+<section id="виды-островов" class="slide level2">
+<h2>Виды островов</h2>
+<p>Термин впервые употреблён в диссертации <span class="citation" data-cites="Ross:1967">Ross (<a href="#/литература" role="doc-biblioref" onclick="">1967</a>)</span>:</p>
+<ul>
+<li>конфигурации, из которых невозможно осуществить синтаксическое передвижение</li>
+<li><strong>сильные</strong> и <strong>слабые</strong> острова</li>
+</ul>
+</section>
+<section id="сильные-острова" class="slide level2">
+<h2>Сильные острова</h2>
+<h3 id="ограничение-сложной-именной-группы">Ограничение сложной именной группы</h3>
+<div class="ex grid">
+<div class="g-col-1" id="">(43)</div> <div class="g-col-11">
+<p>Я видел соседей [которые купили машину]</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(44)</div> <div class="g-col-11">
+<p>*Машину я видел соседей [которые купили <del>машину</del>]<br>
+(вынос невозможен)</p>
+</div>
+</div>
+<h3 id="ограничение-сочинённой-структуры">Ограничение сочинённой структуры</h3>
+<div class="ex grid">
+<div class="g-col-1" id="">(45)</div> <div class="g-col-11">
+<p>Они купили [дачу и машину]</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(46)</div> <div class="g-col-11">
+<p>*Машину они купили [дачу и <del>машину</del>]</p>
+</div>
+</div>
+<p>Но:</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(47)</div> <div class="g-col-11">
+<p>Дачу они купили [<del>дачу</del> и машину]</p>
+</div>
+</div>
+<p><strong>почему так можно?</strong></p>
+</section>
+<section id="ограничение-сложной-именной-группы-1" class="slide level2">
+<h2>Ограничение сложной именной группы</h2>
+<p>Сложная именная группа — именная группа, осложнённая собственным зависимым предложением — придаточным относительным либо аргументным.</p>
+<div class="ex grid">
+<div class="g-col-1" id="">(48)</div> <div class="g-col-11">
+<p>утверждение, которое преподаватель старательно формулировал</p>
+</div>
+</div>
+<div class="ex grid">
+<div class="g-col-1" id="">(49)</div> <div class="g-col-11">
+<p>утверждение, что человек произошёл от обезьяны</p>
+</div>
+</div>
+<p>Разберёмся, как это работает.</p>
+</section>
+<section id="литература" class="slide level2 smaller scrollable">
+<h2>Литература</h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Leddon:2006" class="csl-entry" role="listitem">
+Leddon, E. &amp; J. Lidz. 2006. Reconstruction effects in child language. <em>Proceedings of the 30th <span>Boston</span> <span>University</span> <span>Conference</span> on <span>Language</span> <span>Development</span></em>. Cambridge, MA: Cascadilla Press.
+</div>
+<div id="ref-Ross:1967" class="csl-entry" role="listitem">
+Ross, John. 1967. Constraints on variables in syntax. Massachusetts Institute of Technology phdthesis. <a href="http://dspace.mit.edu/handle/1721.1/15166">http://dspace.mit.edu/handle/1721.1/15166</a>.
 </div>
 </div>
 </section></section>
@@ -1084,7 +1823,7 @@
     }
     </style>
         
-    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom"});
+    <script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":false});
     (function() {
       let previousOnload = window.onload;
       window.onload = () => {
