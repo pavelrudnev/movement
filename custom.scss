@@ -1,27 +1,27 @@
 /*-- scss:defaults --*/
 
 // Main font: ExtraLight 200 + Medium 500 (for bold/headings), including italics
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,500;1,200;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
 // Symbols font: ExtraLight 200 + Medium 500
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;600&display=swap');
 
 // Monospace font: ExtraLight 200 + Medium 500
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;600&display=swap');
 
 // Put the symbols font after the main font to handle arrows and other characters not included in the main font
 $font-family-sans-serif: "Noto Sans", "Noto Sans Symbols", Helvetica, sans-serif !default;
 $font-family-monospace: "Noto Sans Mono", SFMono-Regular, Menlo, monospace !default;
 
-$headings-font-weight: 200 !default;
+$headings-font-weight: 300 !default;
 
 body {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 strong, b,
 em strong, strong em, i strong, strong i {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 sub, sup {
@@ -48,22 +48,22 @@ $code-color: #b3261e !default;
 
 /* Light body — still slender, but sturdier than ExtraLight */
 .reveal {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* Balanced hierarchy: headings at Medium (500) */
 .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 /* Emphasis: one step up to Regular (400) */
 .reveal strong, .reveal b {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* Italics match body weight — no more "heavier italic" */
 .reveal em, .reveal i {
-  font-weight: 250;
+  font-weight: 350;
   font-style: italic;
 }
 
