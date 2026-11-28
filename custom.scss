@@ -1,12 +1,12 @@
 /*-- scss:defaults --*/
 
-// Main font: ExtraLight 200 + Medium 500 (for bold/headings), including italics
+// Main font: ExtraLight 200 + Medium 600 (for bold/headings), including italics
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
-// Symbols font: ExtraLight 200 + Medium 500
+// Symbols font: ExtraLight 200 + Medium 600
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@300;600&display=swap');
 
-// Monospace font: ExtraLight 200 + Medium 500
+// Monospace font: ExtraLight 200 + Medium 600
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;600&display=swap');
 
 // Put the symbols font after the main font to handle arrows and other characters not included in the main font
@@ -21,7 +21,7 @@ body {
 
 strong, b,
 em strong, strong em, i strong, strong i {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 sub, sup {
@@ -56,9 +56,9 @@ $code-color: #b3261e !default;
   font-weight: 300;
 }
 
-/* Emphasis: one step up to Regular (400) */
+/* Emphasis: one step up to Regular (600) */
 .reveal strong, .reveal b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Italics match body weight — no more "heavier italic" */
@@ -245,13 +245,13 @@ $code-color: #b3261e !default;
 /*-- scss:rules --*/
 
 .reveal .slide h3 {
-  margin-top: 0.5em;
-  padding-top: 0.5em;
+  margin-top: 0.75em;
+  padding-top: 0.75em;
   /*border-top: 1px solid rgba(0, 0, 0, 0.15); /* Optional: add a separator line for stronger visual separation */
 }
 
 .reveal .slide h4 {
-  margin-top: 0.25em;
-  padding-top: 0.25em;
+  margin-top: 0.5em;
+  padding-top: 0.5em;
   /*border-top: 1px solid rgba(0, 0, 0, 0.15); /* Optional: add a separator line for stronger visual separation */
 }
